@@ -7,6 +7,7 @@ import java.util.ArrayList; // FIXED: Added this so Java knows what an ArrayList
 import java.util.List;
 
 @RestController
+@RequestMapping("/employee")
 public class EmployeeController {
 
     // Temporary In-Memory Database

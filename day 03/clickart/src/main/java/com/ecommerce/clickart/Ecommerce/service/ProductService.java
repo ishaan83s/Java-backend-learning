@@ -74,4 +74,15 @@ public class ProductService {
         }
         return null;
     }
+
+    // DELETE
+    public boolean deleteProduct(int id) {
+        for (ProductEntity entity : productList) {
+            if (entity.getId() == id) {
+                productList.remove(entity);
+                return true; // Successfully found and removed
+            }
+        }
+        return false; // Product with this ID didn't exist
+    }
 }
